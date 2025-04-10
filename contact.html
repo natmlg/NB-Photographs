@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - NB Photographs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #999;
+    }
+    section {
+      max-width: 600px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NB Photographs</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Contact</h2>
+    <p>Pour toute demande de shooting, projet ou collaboration :</p>
+    <form action="https://formspree.io/f/xldjazrr" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p style="margin-top: 2rem;">Ou contactez-moi via :</p>
+    <p>Email : <a href="mailto:contact@nbphotographs.com" style="color:#ccc;">contact@nbphotographs.com</a><br>
+    Instagram : <a href="https://instagram.com/_nb_photographs_" style="color:#ccc;">@_nb_photographs_</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 NB Photographs – Tous droits réservés</p>
+  </footer>
+</body>
+</html>

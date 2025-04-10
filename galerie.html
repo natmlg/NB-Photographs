@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie - NB Photographs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #999;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .filters {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .filters button {
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 0.5rem;
+    }
+    .filters button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NB Photographs</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Galerie</h2>
+    <!-- Section des filtres -->
+    <div class="filters">
+        <button onclick="filterPhotos('all')">Tout afficher</button>
+        <button onclick="filterPhotos('portrait')">Portraits</button>
+        <button onclick="filterPhotos('paysage')">Paysages</button>
+        <button onclick="filterPhotos('sportif')">Sportif</button>
+	<button onclick="filterPhotos('animalier')">Animalier</button>
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Paysage" class="paysage">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Animalier" class="animalier">
+      <img src="https://picsum.photos/id/1005/600/400" alt="Portrait" class="portrait">
+      <img src="https://picsum.photos/id/1035/600/400" alt="Sportif" class="sportif">
+    </div>
+  </section>
+<script src="script.js"></script>
+  </body>
+</html>
