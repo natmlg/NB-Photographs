@@ -2,45 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>À propos - NB Photographs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0d0d0d;
-      color: #f5f5f5;
-    }
-    header, footer {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    nav a {
-      color: #f5f5f5;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 300;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #999;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
-    <h1>NB Photographs</h1>
+    <div class="header-content">
+      <img src="Signature_blanc.png" alt="Logo" class="logo">
+      <h1>NB Photographs</h1>
+    </div>
     <nav>
       <a href="index.html">Accueil</a>
       <a href="galerie.html">Galerie</a>
@@ -48,14 +20,19 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <section>
+  <main>
+     <section>
     <h2>À propos</h2>
     <p>NB Photographs capture l’instant avec émotion et authenticité, que ce soit en pleine nature, en studio ou sur le terrain.</p>
     <p>Je travaille en <strong>numérique</strong> pour sa flexibilité, et en <strong>argentique</strong> pour la texture, le grain et la magie de la pellicule.</p>
     <p>Je possède un <strong>Sony A6400</strong> avec divers objectifs ainsi qu'un <strong>Konica FS-1</strong> avec divers objectifs également. Je peux également prendre des photos à <strong>l'iPhone</strong> si la session s'y prête</p>
   </section>
+  </main>
   <footer>
-    <p>&copy; 2025 NB Photographs – Tous droits réservés</p>
+    <div class="footer-links">
+      <a href="https://instagram.com/_nb_photographs_" target="_blank"><i class="fab fa-instagram"></i>@_nb_photographs_</a>
+      <a href="mailto:contact@nbphotographs.com"><i class="fas fa-envelope"></i>contact@nbphotographs.com</a>
+    </div>
   </footer>
 </body>
 </html>
